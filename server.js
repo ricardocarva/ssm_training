@@ -20,11 +20,14 @@ const User = require('./models/User');
 connectDB();
 
 
-app.use(express.static(path.join(__dirname, 'client', 'public')));
+// app.use(express.static(path.join(__dirname, 'client', 'public')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'public', 'index.html'));
 });
+
+// routes
+// app.use("/", require("./routes/index"));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
