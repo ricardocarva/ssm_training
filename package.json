@@ -1,0 +1,22 @@
+{
+  "name": "ssm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "react-scripts client/start",
+    "start:backend": "nodemon server.js",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}
