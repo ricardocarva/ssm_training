@@ -1,0 +1,18 @@
+const express = require("express");
+const passport = require("passport");
+const router = express.Router();
+
+
+// Registration route
+router.post(
+    "/register",
+);
+
+
+// this needs to be the last route defined
+// redirect all routes to home, anything that would 404 just goes back to home
+/* router.all("*", (req, res) => {
+    res.redirect("/");
+}); */
+
+module.exports = router;

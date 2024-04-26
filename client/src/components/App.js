@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
     {isLoggedIn ? (
-        <h1>Welcome to our Jira Project!! You are logged in.</h1>
+        <h1>Welcome to my dev playground!! You are logged in.</h1>
       ) : (
         <div className="login-container">
           <h1>Welcome to our Jira Project!</h1>

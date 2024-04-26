@@ -16,7 +16,7 @@
     "bcrypt": "^5.1.1"
   },
   "scripts": {
-    "start:frontend": "cd client && react-scripts start",
+    "start:frontend": "cd ../client && react-scripts start",
     "start:backend": "nodemon server.js",
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
